@@ -12,7 +12,6 @@ function putColor(light, color, transitiontime) {
     "bri":254,
     "hue": ${color}}
     `;
-  // 37073
 
   // An object of options to indicate where to post to
   var put_options = {
@@ -114,6 +113,3 @@ function bounce(timeTilNextMeasure) {
 }
 
 logNextBeat(0);
-
-let i = 0;
-
