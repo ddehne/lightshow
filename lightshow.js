@@ -14,8 +14,9 @@ function putColor(light, color, transitiontime) {
     `;
 
   // An object of options to indicate where to post to
+  const currentHueLocation = '192.168.0.53'
   var put_options = {
-    host: '192.168.0.2',
+    host: currentHueLocation,
     port: 80,
     path: `/api/H4zsxdcwhhRMMzmGLTTP0vAQ0ydRWR0RuBAuBinC/lights/${light}/state`,
     method: 'PUT',
@@ -112,4 +113,9 @@ function bounce(timeTilNextMeasure) {
 
 }
 
-logNextBeat(0);
+// logNextBeat(0);
+
+for(let i =0; i < 20; i++) {
+  console.log(i)
+  putColor(i, getRandomInt())
+}
