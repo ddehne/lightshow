@@ -4,6 +4,7 @@
   "description": "Lightshow to party",
   "main": "lightshow.js",
   "scripts": {
+    "go": "node lightshow.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ddehne",
